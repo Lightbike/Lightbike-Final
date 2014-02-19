@@ -1,7 +1,8 @@
 PImage tronLogo; 
 boolean play;
 boolean main = true;
-int[][] lightGrid = new int[60][80];
+Cell[][] lightGrid;
+Cell[][] lightBike;
 
 void setup() {
   size(800, 800);
@@ -12,8 +13,11 @@ void setup() {
 
 
 void draw() {
-  if(play = true) {
-   playScreen(); 
+  if (play) {
+    playScreen();
+  }
+  if (main) {
+    mainMenu();
   }
 }
 
@@ -34,6 +38,13 @@ void playScreen() {
 }
 
 void keyPressed() {
- play = true; 
+  play = true;
+  main = false;
+}
+
+class Cell {
+  void displayCell() {
+    //if(cellType =
+  }
 }
 
