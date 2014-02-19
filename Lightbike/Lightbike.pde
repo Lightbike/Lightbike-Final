@@ -1,8 +1,11 @@
 PImage tronLogo; 
 boolean play;
 boolean main = true;
-Cell[][] lightGrid;
-Cell[][] lightBike;
+//trailBlue[][] lightGridBlue;
+//carBlue[][] lightBikeBlue;
+
+//trailOrange[][] lightGridOrange;
+//carOrange[][] lightBikeOrange; 
 
 void setup() {
   size(800, 800);
@@ -31,10 +34,6 @@ void mainMenu() {
 
 void playScreen() {
   background(0);
-  strokeWeight(5);
-  stroke(0, 255, 255);
-  noFill();
-  rect(2.5, 0, 795, 200);
 }
 
 void keyPressed() {
@@ -42,9 +41,9 @@ void keyPressed() {
   main = false;
 }
 
-class Cell {
-  void displayCell() {
-    //if(cellType =
+//Constructor
+class Trail {
+  void displayTrailBlue() {
   }
 }
 
